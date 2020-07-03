@@ -1,6 +1,6 @@
 <template>
   <h1>{{ msg }}</h1>
-  <button @click="count++">count is: {{ count }}</button>
+  <button @click="increment">count: {{ count }}</button>
   <p>
     Edit <code>components/HelloWorld.vue</code> to test hot module
     <span :class="$style.re">replacement</span>.
@@ -8,7 +8,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, computed } from 'vue'
+import { useStore } from '/@/store'
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -19,8 +20,10 @@ export default defineComponent({
     }
   },
   setup() {
-    const count = ref(0)
-    return { count }
+    const store = useStore()
+    const count = computed(() => store.getters.countString)
+    const { increment } = store.commit
+    return { count, increment }
   }
 })
 </script>
