@@ -1,8 +1,7 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-/* eslint-disable no-undef */
-const path = require('path')
+import { UserConfig } from 'vite'
+import path from 'path'
 
-module.exports = {
+const config: UserConfig = {
   alias: {
     '/@/': path.resolve(__dirname, 'src')
   },
@@ -13,3 +12,5 @@ module.exports = {
     }
   }
 }
+
+export default config
