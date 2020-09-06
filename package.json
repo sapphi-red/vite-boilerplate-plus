@@ -9,23 +9,23 @@
   },
   "dependencies": {
     "direct-vuex": "^0.12.0",
-    "vue": "^3.0.0-beta.21",
-    "vue-router": "^4.0.0-beta.1",
+    "vue": "^3.0.0-rc.10",
+    "vue-router": "^4.0.0-beta.9",
     "vuex": "^4.0.0-beta.4"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^3.6.1",
-    "@typescript-eslint/parser": "^3.6.1",
-    "@vue/compiler-sfc": "^3.0.0-beta.21",
-    "autoprefixer": "^9.8.5",
-    "eslint": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.1",
+    "@typescript-eslint/parser": "^4.0.1",
+    "@vue/compiler-sfc": "^3.0.0-rc.10",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.8.1",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-vue": "^7.0.0-alpha.8",
-    "prettier": "^2.0.5",
+    "eslint-plugin-vue": "^7.0.0-beta.3",
+    "prettier": "^2.1.1",
     "sass": "^1.26.10",
-    "typescript": "^3.9.6",
-    "vite": "^1.0.0-beta.11"
+    "typescript": "^4.0.2",
+    "vite": "^1.0.0-rc.4"
   },
   "private": true
 }
