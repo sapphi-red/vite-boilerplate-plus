@@ -1,16 +1,20 @@
-import { UserConfig } from 'vite'
+import { defineConfig } from 'vite'
 import path from 'path'
+import vue from '@vitejs/plugin-vue'
 
-const config: UserConfig = {
-  alias: {
-    '/@/': path.resolve(__dirname, 'src')
-  },
-  proxy: {
-    '/api': {
-      target: 'https://example.com',
-      changeOrigin: true
+export default defineConfig({
+  resolve: {
+    alias: {
+      '/@': path.resolve(__dirname, 'src')
     }
-  }
-}
-
-export default config
+  },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://example.com',
+        changeOrigin: true
+      }
+    }
+  },
+  plugins: [vue()]
+})

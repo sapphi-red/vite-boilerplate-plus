@@ -10,14 +10,11 @@ module.exports = {
     browser: true,
     es2017: true
   },
-  plugins: ['@typescript-eslint'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-recommended',
-    'plugin:prettier/recommended',
-    'prettier/vue',
-    'prettier/@typescript-eslint'
+    'plugin:prettier/recommended'
   ],
   rules: {
     'no-console': 'warn',
