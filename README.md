@@ -5,7 +5,7 @@
 Vite boilerplate with
 - Vue 3
 - Vue Router 4
-- Vuex 4 + direct-vuex
+- pinia
 - TypeScript
 - SCSS
 - CSS Modules

@@ -8,10 +8,9 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "direct-vuex": "^0.12.1",
+    "pinia": "^2.0.12",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.14",
-    "vuex": "^4.0.2"
+    "vue-router": "^4.0.14"
   },
   "devDependencies": {
     "@types/node": "^16.11.7",
