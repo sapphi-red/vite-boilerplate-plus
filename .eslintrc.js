@@ -1,14 +1,7 @@
-// eslint-disable-next-line no-undef
 module.exports = {
   root: true,
-  parser: 'vue-eslint-parser',
   parserOptions: {
-    parser: '@typescript-eslint/parser',
-    sourceType: 'module'
-  },
-  env: {
-    browser: true,
-    es2017: true
+    parser: '@typescript-eslint/parser'
   },
   extends: [
     'eslint:recommended',
@@ -18,6 +11,23 @@ module.exports = {
   ],
   rules: {
     'no-console': 'warn',
-    'no-debugger': 'warn'
-  }
+    'no-debugger': 'warn',
+    'no-empty': ['error', { allowEmptyCatch: true }],
+    eqeqeq: 'error',
+    'vue/eqeqeq': 'error'
+  },
+  overrides: [
+    {
+      // root files
+      files: ['*.{js,mjs}'],
+      excludedFiles: ['*/**/*.{js,mjs}'],
+      env: {
+        node: true
+      },
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off'
+      }
+    }
+  ],
+  reportUnusedDisableDirectives: true
 }
