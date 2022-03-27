@@ -3,6 +3,9 @@
     "target": "es2018",
     "module": "esnext",
     "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "esModuleInterop": true,
@@ -12,10 +15,6 @@
     "lib": ["esnext", "dom", "dom.iterable"],
     "skipLibCheck": true,
     "noEmit": true,
-    "typeRoots": [
-      "node_modules/@types",
-      "src/types"
-    ],
     "paths": {
       "/@/*": [
         "src/*"
