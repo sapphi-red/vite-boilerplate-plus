@@ -14,6 +14,7 @@ module.exports = {
     'no-console': 'warn',
     'no-debugger': 'warn',
     'no-empty': ['error', { allowEmptyCatch: true }],
+    '@typescript-eslint/consistent-type-imports': 'error',
     eqeqeq: 'error',
     'vue/eqeqeq': 'error'
   },
