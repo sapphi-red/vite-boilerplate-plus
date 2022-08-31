@@ -21,8 +21,8 @@ export default defineComponent({
   },
   setup() {
     const store = useStore()
-    const count = computed(() => store.getters.countString)
-    const { increment } = store.commit
+    const count = computed(() => store.countString)
+    const { increment } = store
     return { count, increment }
   }
 })
