@@ -12,6 +12,7 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
     "baseUrl": ".",
     "lib": ["esnext", "dom", "dom.iterable"],
     "skipLibCheck": true,
@@ -21,5 +22,8 @@
         "src/*"
       ]
     }
+  },
+  "vueCompilerOptions": {
+    "strictTemplates": true
   }
 }

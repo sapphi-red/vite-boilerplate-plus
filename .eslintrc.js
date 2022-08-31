@@ -16,7 +16,8 @@ module.exports = {
     'no-empty': ['error', { allowEmptyCatch: true }],
     '@typescript-eslint/consistent-type-imports': 'error',
     eqeqeq: 'error',
-    'vue/eqeqeq': 'error'
+    'vue/eqeqeq': 'error',
+    'vue/multi-word-component-names': 'off' // TODO
   },
   overrides: [
     {
